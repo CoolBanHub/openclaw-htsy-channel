@@ -3,6 +3,7 @@
 OpenClaw 的海豚私域 (HTSY) Open Channel 插件，用于对接海豚私域开放平台 API（微信消息回调与发送）。
 
 **海豚私域开放平台**: https://open.cpshelp.cn/
+**API 端点**: https://open-api.cpshelp.cn
 
 ## 安装
 
@@ -32,7 +33,7 @@ channels:
   htsy_open:
     enabled: true
     # 海豚私域 API 端点
-    endpoint: "https://open.cpshelp.cn"
+    endpoint: "https://open-api.cpshelp.cn"
     # 应用 ID
     appId: "your-app-id"
     # 应用密钥
@@ -60,7 +61,7 @@ channels:
 | 配置项 | 类型 | 必填 | 默认值 | 说明 |
 |--------|------|------|--------|------|
 | `enabled` | boolean | 否 | true | 是否启用此 Channel |
-| `endpoint` | string | 否 | https://open.cpshelp.cn | 海豚私域 API 端点 |
+| `endpoint` | string | 否 | https://open-api.cpshelp.cn | 海豚私域 API 端点 |
 | `appId` | string | **是** | - | HTSY 应用 ID |
 | `appSecret` | string | **是** | - | HTSY 应用密钥 |
 | `authorizerUserId` | string | **是** | - | 授权用户 ID |
