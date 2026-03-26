@@ -37,8 +37,8 @@ channels:
     httpTimeoutSec: 60
     # 媒体素材下载目录（可选，默认 ~/.openclaw/workspace/htsy-open-downloads）
     downloadDir: ""
-    # 默认机器人类型
-    defaultBotType: 0
+    # 默认机器人类型（2=企微）
+    defaultBotType: 2
     # 私信策略：allowlist（白名单）或 public（公开）
     dmPolicy: "allowlist"
     # 白名单列表（当 dmPolicy 为 allowlist 时生效）
@@ -57,7 +57,7 @@ channels:
 | `webhookPath` | string | 否 | /htsy-open/callback | Webhook 回调路径 |
 | `httpTimeoutSec` | number | 否 | 60 | HTTP 请求超时秒数 |
 | `downloadDir` | string | 否 | ~/.openclaw/workspace/htsy-open-downloads | 媒体素材下载目录 |
-| `defaultBotType` | number | 否 | 0 | 默认机器人类型 |
+| `defaultBotType` | number | 否 | 2 | 默认机器人类型（2=企微） |
 | `dmPolicy` | string | 否 | allowlist | 私信策略 |
 | `allowFrom` | string[] | 否 | [] | 白名单用户/群列表 |
 

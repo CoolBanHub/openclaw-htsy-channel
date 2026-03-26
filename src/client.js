@@ -100,7 +100,7 @@ export function resolveOutboundBotContext(params) {
     }
   }
 
-  const fallbackBotType = Number(params?.defaultBotType ?? 0);
+  const fallbackBotType = Number(params?.defaultBotType ?? 2);
   if (Number.isFinite(fallbackBotType) && fallbackBotType > 0) {
     return { botType: fallbackBotType };
   }
