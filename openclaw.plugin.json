@@ -24,7 +24,6 @@
               "httpTimeoutSec": { "type": "number" },
               "downloadDir": { "type": "string" },
               "webhookPath": { "type": "string" },
-              "defaultBotWxid": { "type": "string" },
               "defaultBotType": { "type": "number" },
               "dmPolicy": { "type": "string" },
               "allowFrom": {

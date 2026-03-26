@@ -139,12 +139,11 @@ export const htsyOpenPlugin = createChatChannelPlugin({
 
       const botContext = resolveOutboundBotContext({
         targetWxid,
-        defaultBotWxid: account.defaultBotWxid,
         defaultBotType: account.defaultBotType,
       });
       if (!botContext?.botWxid || !botContext?.botType) {
         throw new Error(
-          "htsy_open: missing bot context. send one inbound message first, or configure channels.htsy_open.defaultBotWxid/defaultBotType",
+          "htsy_open: missing bot context. send one inbound message first, or configure channels.htsy_open.defaultBotType",
         );
       }
 

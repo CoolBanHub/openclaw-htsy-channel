@@ -412,7 +412,7 @@ export async function handleHtsyOpenWebhook({ req, res, account, channelRuntime,
           return;
         }
         const to = normalizeTarget(targetWxid);
-        const effectiveBotWxid = String(payload?.botWxid ?? account.defaultBotWxid ?? "").trim();
+        const effectiveBotWxid = String(payload?.botWxid ?? "").trim();
         const botType = Number(payload?.botType ?? account.defaultBotType ?? 0);
         if (!to || !effectiveBotWxid || !Number.isFinite(botType) || botType <= 0) {
           throw new Error("htsy_open: missing target or bot context for reply");

@@ -100,10 +100,9 @@ export function resolveOutboundBotContext(params) {
     }
   }
 
-  const fallbackBotWxid = String(params?.defaultBotWxid ?? "").trim();
   const fallbackBotType = Number(params?.defaultBotType ?? 0);
-  if (fallbackBotWxid && Number.isFinite(fallbackBotType) && fallbackBotType > 0) {
-    return { botWxid: fallbackBotWxid, botType: fallbackBotType };
+  if (Number.isFinite(fallbackBotType) && fallbackBotType > 0) {
+    return { botType: fallbackBotType };
   }
   return null;
 }

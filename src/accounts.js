@@ -24,7 +24,6 @@ export function resolveAccount(cfg, accountId) {
     webhookPath: asString(section.webhookPath, DEFAULT_WEBHOOK_PATH),
     httpTimeoutSec: Math.max(1, Math.min(1000, asNumber(section.httpTimeoutSec, 60))),
     downloadDir: asString(section.downloadDir),
-    defaultBotWxid: asString(section.defaultBotWxid),
     defaultBotType: Math.max(0, asNumber(section.defaultBotType, 0)),
     dmPolicy: asString(section.dmPolicy, "allowlist"),
     allowFrom: Array.isArray(section.allowFrom)
