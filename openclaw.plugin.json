@@ -1,0 +1,40 @@
+{
+  "id": "htsy-open",
+  "kind": "channel",
+  "channels": ["htsy_open"],
+  "name": "HTSY Open",
+  "description": "HTSY Open channel plugin",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "channels": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "htsy_open": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "enabled": { "type": "boolean" },
+              "endpoint": { "type": "string" },
+              "appId": { "type": "string" },
+              "appSecret": { "type": "string" },
+              "authorizerUserId": { "type": "string" },
+              "httpTimeoutSec": { "type": "number" },
+              "downloadDir": { "type": "string" },
+              "webhookPath": { "type": "string" },
+              "defaultBotWxid": { "type": "string" },
+              "defaultBotType": { "type": "number" },
+              "dmPolicy": { "type": "string" },
+              "allowFrom": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@local/htsy-open",
+  "version": "0.1.0",
+  "description": "HTSY Open channel plugin for OpenClaw",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "channel": {
+      "id": "htsy_open",
+      "label": "HTSY Open",
+      "selectionLabel": "HTSY Open",
+      "docsPath": "/channels/htsy-open",
+      "blurb": "HTSY Open callback + send API integration",
+      "aliases": [
+        "htsy-open"
+      ]
+    }
+  }
+}
